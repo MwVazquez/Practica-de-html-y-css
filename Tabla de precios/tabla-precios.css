@@ -1,5 +1,6 @@
 body{
     font-family: 'Dancing Script', cursive;
+    padding: 10px;
 }
 h2{
     font-weight: 1000;
@@ -7,5 +8,26 @@ h2{
 
 .contenedor{
     margin: 0 auto;
-    width: 500px;
+    width: 90% ;
+}
+
+.flex{
+    display: flex
+}
+
+.textoEnElCentro{
+    text-align: center;
+}
+.columna{
+    background: crimson;/*fondo*/
+    color: black ;/*color de texto*/
+    border: 1px solid gainsboro; /*color de borde*/
+    margin: 10px;/*margenes*/
+    padding: 10px;
+    border-radius: 50px; /*bordes redondeados*/
+
+}
+.precio{
+    font-size: 50px;
+    color: burlywood;
 }
