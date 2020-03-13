@@ -35,3 +35,21 @@ h2{
     font-size: 50px;
     color: burlywood;
 }
+
+.boton-precio{
+background: indigo;
+/*cambia y abarca a todo el cuadrado*/
+display: block;
+padding: 10px;
+color: ivory;
+/*saco el subrayado del hipervinculo*/
+text-decoration: none;
+/*redondeo de boton*/
+border-radius: 50px;
+/*distancia con la parte inferior del cuadro*/
+margin-bottom: 10px;
+}
+
+.boton-precio:hover{
+    background: red;
+}
