@@ -12,7 +12,9 @@ h2{
 }
 
 .flex{
-    display: flex
+    display: flex;
+    
+    flex-wrap: wrap;/*Los elementos flex son colocados en varias líneas.*/
 }
 
 .textoEnElCentro{
@@ -22,14 +24,15 @@ h2{
     background: crimson;/*fondo*/
     color: black ;/*color de texto*/
     border: 1px solid gainsboro; /*color de borde*/
-    margin: 10px;/*margenes*/
+    margin: 0 auto;/*margenes*/
     padding: 10px;
     border-radius: 50px; /*bordes redondeados*/
 
     /*box-shadow mozilla  Para dar sombreado;*/
     /* ejeY   ejeY   [degradado] color*/
     box-shadow: 10px 10px grey;
-
+    width: 23%; /*Para que solo usen un porcentaje del maximo disponible*/
+    box-sizing: border-box; /* calcular el ancho y alto total de un elemento ,pero no el margen.*/
 }
 .precio{
     font-size: 50px;
@@ -52,4 +55,18 @@ margin-bottom: 10px;
 
 .boton-precio:hover{
     background: red;
+}
+
+@media(max-width :1070px){
+    .columna{
+        width: 46%;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width :600px){
+    .columna{
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
