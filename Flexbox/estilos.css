@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:#e9e9e9;
+}
+.contenedor{
+    width: 500px;
+    height: 200px;
+    background: #fff;
+    padding: 10px;
+    border: 10px solid #2c3e50;
+    margin: 20px;
+
+    display: flex/* se posicionaron en linea y ahora ocupa 100 % de la parte vertical*/;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    align-items: center;
+
+}
+.elemento{
+    color: #fff;
+    margin: 5px;
+    width: 50px/*(ANCHO)por defecto ocupa el 100*/;
+    height: 50px; /*(ALTURA)despues del displaya flex, esto recuadra el numero*/
+    background: #e67e22;
+    text-align: center;
+}
