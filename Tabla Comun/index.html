@@ -7,8 +7,20 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
     <table >
-        <!--Leyenda-->
+
+        <!--
+            Leyenda
+        -->
         <caption>Jugando con tablas</caption>
+
+        <!--
+            Agrupacion de columnas
+        -->
+        <colgroup>
+            <col span="2"><!--Ignora la cantidad dicha-->
+            <col class="yellow"> <!--En este caso, comienza con la tercera-->
+        </colgroup>
+
         <thead>
 
             <!--Cabecera-->
@@ -24,7 +36,9 @@
         </thead>
         <!--Cuerpo de la tabla-->
         <tbody>
-            <tr><!--2° fila-->
+<!-- Para pintar una fila, poner clase en tr-->
+
+            <tr ><!--2° fila-->
                 <td>9:10</td><!--1° columnas-->
                 <td></td><!--2° columnas-->
                 <td></td><!--3° columnas-->
@@ -49,13 +63,23 @@
                 <td></td><!--6° columnas-->
             </tr>
             <tr>
-                <td>Descanso</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td><!--6° columnas-->
+                <td>12:10</td>
+                <!--Ocupa la cantidad de columnas que indiquemos-->
+                <td colspan="5">Descanso</td>
             </tr>
+            <tr>
+                <td rowspan="2">13:10</td> <!--Ocupa dos filas-->
+                <td colspan="5">Actividad 1</td>
+            </tr>
+            <tr>
+                <td colspan="5">Actividad 2</td>
+            <tfoot>
+                <tr>
+                    <td>Total horas</td>
+                    <td colspan="5">5 horas</td>
+                </tr>
+            </tfoot>
+
         </tbody>
     </table>
 
