@@ -1,0 +1,21 @@
+Se utilizan para mostrar datos tabulados
+Solo muestran los datos tabulados
+Se basan en filas, no en columnas
+
+tr filas
+td celdas
+
+Se pueden dividir en tres partes funadamentales:
+*thead: Cabecera de la tabulados
+*tbody:Cuerpo de la tabla 
+*tfoot: Pie de la tabla 
+
+
+Existen dos atributos para poder modificar los tamaños de celdas: 
+*colspan: Fusiona columnas  
+*rowspon:Fusiona celdas 
+
+
+
+VER POR QUE NO FUNCIONA 
+border-collapse: separate
