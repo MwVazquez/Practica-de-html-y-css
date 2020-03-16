@@ -1,5 +1,21 @@
 table {
     /* border: red 1px solid ; */
     border: 1px solid blue;
-    border-collapse: separate;
+    border-collapse: collapse; /*Solo se utilizada si le das bordes a th,tr*/
+    margin: auto;
+    caption-side: bottom;
+}
+
+td,th{
+    border: 2px solid blue; /*Con esto solo hace muchos recuadros separados*/
+    padding: 10px 10px ;
+    text-align: center;
+}
+th{
+    background: black;
+    color: white;
+}
+caption{
+    padding-top: 20px;
+    font-style: italic;
 }

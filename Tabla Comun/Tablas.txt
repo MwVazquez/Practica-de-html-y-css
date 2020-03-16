@@ -4,6 +4,7 @@ Se basan en filas, no en columnas
 
 tr filas
 td celdas
+th encabezado
 
 Se pueden dividir en tres partes funadamentales:
 *thead: Cabecera de la tabulados
