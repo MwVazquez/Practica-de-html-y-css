@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="../RP.png">
+</head>
+<body>
+    <form >
+        <!--Se asocia con el atributo  id-->
+        <label for="idnombre">Ingrese su nombre: </label>
+        <!--
+            Cuadro para escribir con valor predertminado que al empezar a 
+            escribir borra el contenido predeterminado anteriormente
+        -->
+        <input type="text" placeholder="Escribe tu nombre" 
+        maxlength="10" name="nombre" id="idnombre">
+
+        <br>
+        <label for="idcontrasena">Introduzca su contraseña:</label>
+        <input type="password" placeholder="12345" name="contrasena" id="idcontrasena">
+       
+        <br>
+        <label for="idemail">Introduzca su email</label>
+        <input type="email" id="idemail" placeholder="lalal@pepo.com">
+
+        <br><br><br><br>
+        <div class="radio">
+            <input type="radio" name="sexo" id="hombre">
+            <label for="hombre">Hombre</label>
+            <input type="radio" name="sexo" id="mujer" >
+            <label for="mujer">Mujer</label>
+            <input type="radio" name="sexo" id="otro">
+            <label for="otro">Otro</label>
+        </div>
+        <br>
+        <div class="check">
+            <input type="checkbox" name="checkbox" id="checkbox1">
+            <label for="checkbox1">checkboxin 1</label>
+
+            <input type="checkbox" name="checkbox2" id="checkbox2">
+            <label for="checkbox2">checkboxin 2</label>
+
+        </div>
+        <div>
+
+        </div>
+    </form>
+</body>
+</html>
