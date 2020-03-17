@@ -28,7 +28,7 @@
 
         <br><br><br><br>
         <div class="radio">
-            <input type="radio" name="sexo" id="hombre">
+            <input type="radio" name="sexo" id="hombre" >
             <label for="hombre">Hombre</label>
             <input type="radio" name="sexo" id="mujer" >
             <label for="mujer">Mujer</label>
@@ -37,7 +37,7 @@
         </div>
         <br>
         <div class="check">
-            <input type="checkbox" name="checkbox" id="checkbox1">
+            <input type="checkbox" name="checkbox" id="checkbox1" >
             <label for="checkbox1">checkboxin 1</label>
 
             <input type="checkbox" name="checkbox2" id="checkbox2">
@@ -48,5 +48,57 @@
 
         </div>
     </form>
+
+    <h1>Mas atributos de input</h1>
+    <label for="idbuscador">Buscador con ayuda minima</label>
+    <input type="search" name="buscador" id="idbuscador" placeholder="Cancion,autor,genero">
+    <hr>
+    <!-- 
+        size caracteres visibles(es chamullo)
+        maxlenght numero maximo de caracteres a tomar
+    -->
+    <label for="idbuscador2">Ayuda con maximos a ver y a tomar</label>
+    <input type="search" id=idbuscador2 maxlength="7">
+
+    <hr>
+    <!-- 
+        list crea una lista de sugerencias
+    -->
+    <label for="idbuscador3">Ayuda con lista de sugerencias</label>
+    <input type="search" id=idbuscador3 list="listamodelos">
+    <datalist id="listamodelos">
+        <option value="Vento"></option>
+        <option value="Apache"></option>
+        <option value="Susan"></option>
+        <option value="Flopi"></option>
+    </datalist>
+
+    <hr>
+    <!-- 
+        patter para introducir restricciones a lo ingresado
+        required impide a los usuarios dejarlo vacio
+    -->
+    <label for="idbuscador4">Busca solo si se introduce algo con un patron</label>
+    <input type="search" id=idbuscador4 pattern="[A-Za-z0-9]{8,20}" title="Un código válido consiste en una cadena con 8 a 20 caracteres, cada uno de los cuales es una letra o un dígito" required >
+
+    <h2>Fechas</h2>
+    <label for="fecha">Ingrese dia de nacimiento</label>
+    <input type="date">
+    <hr>
+    <label for="fecha">Ingrese pero solo dia viernes entre 2 fecha hardcodeada</label>
+    <input type="date" min="2015-02-20" max="2015-04-24" step="7">
+
+    <h3>Hora</h3>
+    <label for="">Seleccione horario</label>
+    <input type="time" name="Hora">
+
+    <h4>Archivo</h4>
+    <!--
+        <form action="../../form-result.php" method="post" 
+        enctype="multipart/form-data" (usar esta xk es requerida)
+    -->
+    <p>Sube un archivo con un formato especial<input type="file" name="archivoSubido" accept="image/png, .jpeg, image/gif"></p>
+    <p>Sube archivos<input type="file" name="archivoSubido[]" multiple></p>
+
 </body>
 </html>
