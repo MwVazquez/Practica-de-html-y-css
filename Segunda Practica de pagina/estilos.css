@@ -2,7 +2,7 @@
     margin: 0; 
     padding: 0;
     box-sizing: border-box;
-    
+    width: 100%;
 }
 body{
     font-family: 'Oxanium';
@@ -26,6 +26,7 @@ header{
     width: 100%;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 .textos-header h1{
     font-size: 30px;
@@ -49,28 +50,91 @@ nav a{
 nav a:hover{
     text-decoration: underline;
 }
+
 .wave{
     position: absolute;
     bottom: 0;
     width: 100%;
 }
-.contenedor{
-    padding: 60px 0;
-    width: 95%;
-    max-width: 1200px; 
-    margin: auto;
-    overflow: hidden;
-}
+
 .titulo{
-    color: #642a73;
+    color: #b79fbd;
     font-size: 30px;
     text-align: left;
     margin-bottom: 10px;
+    text-align: center;
 }
-.max-opinion{
-    /*Flex*/
+.NuestroProducto{
+    width: 90%;
+    margin: auto;
+    
+    
+     /*Flex*/
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
+.imagen-main{
+    width: 46%;
+    height: 600px;
+}
+.textos{
+    width: 46%;
+    margin: 0 0 10px 50px;
+
+    /*Flex*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.texto h3{
+    margin-bottom: 15px;
+}
+.texto h3 span{
+    background: #4d0686;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 66px rgba(0, 0 ,0,.5);
+    margin-right: 5px;
+}
+
+.texto p{
+    padding: 0px 0px 30px 30px;
+    font-weight: 300px;
+    text-align: justify;
+}
+/* Galeria */
+.portafolio{
+    background-color: #f2f2f2;
+    width: 100%;
+    padding-top: 50px;
+}
+.galeria{
+    
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+    align-content: center;
+    cursor: pointer;
+    
+
+}
+
+.galeria img{
+    width: 24%;
+    margin-bottom: 10px;
+}
+
