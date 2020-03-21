@@ -129,12 +129,270 @@ nav a:hover{
     
     align-content: center;
     cursor: pointer;
-    
-
 }
 
 .galeria img{
     width: 24%;
     margin-bottom: 10px;
+}
+
+.max-opinion{
+    padding-top: 30px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+.opinion{
+    background: #4d0686;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0, 0 ,0, .6);
+    
+}
+.opinion img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius:50% ;
+    justify-content: center;
+}
+
+.opinion div{
+    width: 60%;
+    color: #fff;
+    text-align: center;
+}
+
+.opinion div p{
+    font-weight: 10;
+    padding-top: 5px;
+    justify-content: space-around;
+}
+
+/* Servicios */
+.servicios{
+    /* width: 90%;
+    margin: auto; */
+    background: #f2f2f2;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.servicios div{
+    width: 25%;
+    justify-content: center;
+}
+
+.servicios img{
+    width: 90%;
+    height: 150px;
+}
+
+.servicios h3{
+    margin: 10px 0;
+}
+
+.servicios p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+}
+
+.contacto{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+    
+}
+
+.contacto div {
+    
+    color: #fff;
+    text-align: center;
+    width: 25%;
+}
+
+.contacto h4{
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #b79fbd;
+
+}
+
+ @media screen and (max-width:900px){
+    header{
+        background-position: center;
+        height: 500px;
+    }
+    nav{
+        padding-top: 50px;
+        /* text-align: center; */
+    }
+    .NuestroProducto{
+        justify-content: center;
+        align-items: center;
+    }
+    .textos{
+        width: 90%;
+        margin: auto;
+    }
+    .imagen-main{
+        width: 90%;
+        height: auto;
+    }
+    .galeria img{
+        width: 46%;
+    }
+    .max-opinion{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .opinion{
+        width: 90%;
+        margin-top: 15px;
+    }
+    .opinion:last-child{
+        margin-bottom: 30px;
+    }
+    .servicios{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .servicios div{
+        width: 90%;
+        justify-items: center;
+        margin: auto;
+    }
+    .servicios img{
+        width: 100%;
+        height: 250px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .servicios p{
+        text-align: center;
+    }   
+}
+@media screen and (max-width:500px){
+    header{
+        background-position: center;
+    }
+    nav{
+        padding-top: 50px;
+        text-align: center; 
+    }
+    .textos-header h1{
+        font-size: 20px;
+    }
+    .textos-header h2{
+        font-size: 15px;
+    }
+    .NuestroProducto{
+        justify-content: center;
+        align-items: center;
+    }
+    .textos{
+        width: 90%;
+        margin: auto;
+    }
+    .portafolio h2{
+        font-size: 20px;
+    }
+    .imagen-main{
+        width: 90%;
+        height: auto;
+    }
+    .galeria img{
+        width: 90%;
+    }
+    .max-opinion{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .max-opinion h2{
+        font-size: 25px;
+    }
+    .opinion{
+        width: 95%;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 250px;
+    }
+    .opinion img{
+        width: 50px;
+        height: 50px;
+    }
+    .opinion div{
+        text-align: justify;
+    }
+    .opinion:last-child{
+        margin-bottom: 30px;
+    }
+    .servicios{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .servicios h2{
+        font-size: 25px;
+    }
+    .servicios div{
+        width: 90%;
+        justify-items: center;
+        margin: auto;
+    }
+    .servicios img{
+        width: 100%;
+        height: 250px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .servicios p{
+        text-align: center;
+    }
+    .contacto{
+        flex-direction: column; 
+    }
+    .contacto div{
+        text-align: center;
+        width: 90%;
+        padding-bottom: 15px;
+    }
+    .contacto h4{
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .titulo-final{
+        font-size: 15px;
+    }
+
 }
 
