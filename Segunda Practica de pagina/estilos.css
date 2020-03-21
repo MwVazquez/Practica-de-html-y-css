@@ -12,20 +12,25 @@ header{
     font-family: 'Courgette';
     width: 100%;
     height: 600px;
-    background: #bc4e9c;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(340,95%,50%,0.459), hsla(317,45%,52%,0.664)),url(img/paisaje.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: #bc4e9c;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-gradient(linear, left top, right top, from(hsla(340,95%,50%,0.459)), to(hsla(317,45%,52%,0.664))),url(img/paisaje.jpg);
     background: linear-gradient(to right, hsla(340,95%,50%,0.459), hsla(317,45%,52%,0.664)),url(img/paisaje.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;/*Es para el tamaño de la imagen de fondo*/
     background-attachment: fixed;
     position: relative;
 }
 .textos-header{
+    display:-webkit-box;
     display:flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
     height: 430px;
     width: 100%;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     text-align: center;
 }
 .textos-header h1{
@@ -70,12 +75,17 @@ nav a:hover{
     
     
      /*Flex*/
+    display: -webkit-box;
     display: flex;
     justify-content: space-around;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
 }
 .imagen-main{
     width: 46%;
@@ -86,11 +96,16 @@ nav a:hover{
     margin: 0 0 10px 50px;
 
     /*Flex*/
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
 }
 .texto h3{
     margin-bottom: 15px;
@@ -123,8 +138,10 @@ nav a:hover{
     
     width: 90%;
     margin: auto;
+    display: -webkit-box;
     display: flex;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+            justify-content: space-evenly;
     flex-wrap: wrap;
     
     align-content: center;
@@ -140,6 +157,7 @@ nav a:hover{
     padding-top: 30px;
     width: 90%;
     margin: auto;
+    display: -webkit-box;
     display: flex;
     justify-content:space-around;
     flex-wrap: wrap;
@@ -147,10 +165,12 @@ nav a:hover{
 
 .opinion{
     background: #4d0686;
+    display: -webkit-box;
     display: flex;
     width: 46%;
     height: 200px;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
     border-radius: 5px;
     box-shadow: 0 0 6px rgba(0, 0 ,0, .6);
     
@@ -158,10 +178,12 @@ nav a:hover{
 .opinion img{
     width: 100px;
     height: 100px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border: 3px solid #fff;
     border-radius:50% ;
-    justify-content: center;
+    -webkit-box-pack: center;
+            justify-content: center;
 }
 
 .opinion div{
@@ -182,6 +204,7 @@ nav a:hover{
     margin: auto; */
     background: #f2f2f2;
     padding-bottom: 30px;
+    display: -webkit-box;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -189,7 +212,8 @@ nav a:hover{
 }
 .servicios div{
     width: 25%;
-    justify-content: center;
+    -webkit-box-pack: center;
+            justify-content: center;
 }
 
 .servicios img{
@@ -213,9 +237,11 @@ footer{
 }
 
 .contacto{
+    display: -webkit-box;
     display: flex;
     width: 90%;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+            justify-content: space-evenly;
     margin: auto;
     padding-bottom: 50px;
     border-bottom: 1px solid #ccc;
@@ -253,8 +279,10 @@ footer{
         /* text-align: center; */
     }
     .NuestroProducto{
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+                align-items: center;
     }
     .textos{
         width: 90%;
@@ -268,9 +296,13 @@ footer{
         width: 46%;
     }
     .max-opinion{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        -webkit-box-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+                align-items: center;
     }
     .opinion{
         width: 90%;
@@ -280,8 +312,11 @@ footer{
         margin-bottom: 30px;
     }
     .servicios{
-        justify-content: center;
-        flex-direction: column;
+        -webkit-box-pack: center;
+                justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
     }
     .servicios div{
         width: 90%;
@@ -313,8 +348,10 @@ footer{
         font-size: 15px;
     }
     .NuestroProducto{
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+                align-items: center;
     }
     .textos{
         width: 90%;
@@ -331,9 +368,13 @@ footer{
         width: 90%;
     }
     .max-opinion{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        -webkit-box-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+                align-items: center;
     }
     .max-opinion h2{
         font-size: 25px;
@@ -341,9 +382,13 @@ footer{
     .opinion{
         width: 95%;
         margin-top: 15px;
+        display: -webkit-box;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        -webkit-box-pack: center;
+                justify-content: center;
         height: 250px;
     }
     .opinion img{
@@ -357,8 +402,11 @@ footer{
         margin-bottom: 30px;
     }
     .servicios{
-        justify-content: center;
-        flex-direction: column;
+        -webkit-box-pack: center;
+                justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
     }
     .servicios h2{
         font-size: 25px;
@@ -378,7 +426,9 @@ footer{
         text-align: center;
     }
     .contacto{
-        flex-direction: column; 
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column; 
     }
     .contacto div{
         text-align: center;
