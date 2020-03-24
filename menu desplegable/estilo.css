@@ -1,0 +1,88 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    background: #f2f2f2;
+} */
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+header{
+    width: 100%;
+    background: #4e94ab;
+    height: 70px;
+}
+#boton-menu{
+    display: none;/*elimina el cuadradito*/
+}
+header label{
+    display: none;/*ahora lo pongo para que desaparezca*/
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+header label:hover{
+    cursor: pointer;
+    background: red;
+    width:50px;
+    height: 50px;
+}
+
+.menu ul{
+    margin: 0;
+    list-style: none;/*Se saca los puntos a la lista*/
+    padding: 10px;
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
+.menu li{
+    flex-grow: 1;
+    text-align: center;
+}
+
+.menu li:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.menu li a{
+    display: block ;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.pepe{
+
+   padding: 20px; 
+  
+}
+
+@media screen and (max-width:700px){
+    
+    header label{
+        display: block;
+    }
+    .menu {
+        position: absolute;
+        background: #4e94ab;
+        width: 100%;
+        margin-left: -100%;/*para sacar el menu de la pantalla */
+        transition: all 0.5s;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .menu li{
+        border-top: 1px solid #fff;
+    }
+    .menu li:last-child{
+        border-bottom: 1px solid #fff;
+    }
+
+    #boton-menu:checked ~ .menu{
+        margin: 0;
+    }
+
+}
